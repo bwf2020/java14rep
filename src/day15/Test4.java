@@ -185,6 +185,7 @@ public class Test4 {
 			System.out.println(kv.split("=")[0]+"-"+kv.split("=")[1]);
 		}
 		*/
+		
 		System.out.println("=================");
 		
 		Properties pro=new Properties();
