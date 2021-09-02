@@ -75,6 +75,8 @@ public class Test3<T> {
 		List<Object> list4=new ArrayList<Object>();
 		t.show4(list3);
 		t.show5(list4);
+		
+		
 
 	}
 
