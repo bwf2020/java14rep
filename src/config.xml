@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+  <properties resource="dbconfig.properties"></properties>
+	<!-- 配置mybatis运行环境 -->
+	<environments default="cybatis">
+		<environment id="cybatis">
+			<!-- type="JDBC" 代表使用JDBC的提交和回滚来管理事务 -->
+			<transactionManager type="JDBC" />
+
+			<dataSource type="POOLED">
+				<property name="driver" value="${driverClass}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${user}" />
+				<property name="password" value="${pwd}" />
+			</dataSource>
+			
+		</environment>
+	</environments>
+	
+	
+	<mappers>
+	<mapper resource="day20/User.xml"/>
+	</mappers>
+
+</configuration>

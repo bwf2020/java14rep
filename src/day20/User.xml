@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="day20.User">
+  
+  
+  
+  <insert id="save">
+  
+  
+  	insert into user(id,name) values(#{id},#{name})
+  
+  </insert>
+  
+  <delete id="del">
+  
+  	delete from user where id=#{id}
+  
+  </delete>
+  
+  <select id="findAll" resultType="com.bwf.entity.User">
+  
+  	select * 
+  	from user
+  	where 1=1
+  
+  </select>
+  
+  
+  </mapper>
